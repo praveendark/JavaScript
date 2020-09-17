@@ -34,3 +34,53 @@ function init() {
 }
 init();
 ```
+# 1 this
+The JavaScript this keyword refers to the object it belongs to.
+In a method, this refers to the owner object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In an event, this refers to the element that received the event.
+Methods like call(), and apply() can refer this to any object.
+
+``` js
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+```
+
+## 1.1 this in method
+
+``` js
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+```
+
+## 1.2 Explicit Function Binding
+
+The call() and apply() methods are predefined JavaScript methods.
+
+They can both be used to call an object method with another object as argument.
+
+``` js
+var person1 = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+var person2 = {
+  firstName:"John",
+  lastName: "Doe",
+}
+person1.fullName.call(person2);  // Will return "John Doe"
+```
