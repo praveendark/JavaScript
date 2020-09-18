@@ -127,3 +127,6 @@ class Car {
 }
 mycar = new Car("Ford");
 ```
+# Event Loop
+
+The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, it will take the first event from the queue and will push it to the Call Stack, which effectively runs it.
