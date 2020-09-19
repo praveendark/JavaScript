@@ -207,7 +207,7 @@ function checkAdult(age) {
   return age >= 18;
 }
 
-console.log(ages.filter)
+console.log(ages.filter(checkAdult))
 ```
 
 >> find()
