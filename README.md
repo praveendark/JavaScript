@@ -569,3 +569,41 @@ mycar = new Car("Ford");
 # Event Loop
 
 The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, it will take the first event from the queue and will push it to the Call Stack, which effectively runs it.
+
+# Asynchronous Javascript
+## setTimeout()
+The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds.
+``` js
+<script>
+function myFunction() {
+  setTimeout(function(){ alert("Hello"); }, 3000);
+}
+</script>
+```
+## setInterval()
+The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds).
+
+``` js
+<script>
+function myFunction() {
+  setInterval(function(){ alert("Hello"); }, 3000);
+}
+</script>
+```
+## Callback Function
+A JavaScript Callback Function is a function that is passed as a parameter to another JavaScript function, and the callback function is run inside of the function it was passed into
+
+``` js
+function functionOne(x) { return x; };
+
+function functionTwo(var1) {
+    // some code
+}
+
+functionTwo(functionOne);
+```
+## Promise
+A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending.
+
+## async/await
+An async function is a function declared with the async keyword. Async functions are instances of the AsyncFunction constructor, and the await keyword is permitted within them. The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
