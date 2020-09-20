@@ -675,3 +675,34 @@ The Channel Messaging API allows two separate scripts running in different brows
 
 ## Console API
 The Console API provides functionality to allow developers to perform debugging tasks, such as logging messages or the values of variables at set points in your code, or timing how long an operation takes to complete.
+
+## Content Index API
+
+The Content Index API allows developers to register their offline enabled content with the browser.
+As it stands, offline web content is not easily discoverable by users. Content indexing allows developers to tell the browser about their specific offline content. This allows users to discover and view what is available, whilst giving developers the ability to add and manage this content. Examples could be a news website prefetching the latest articles in the background, or a content streaming app registering downloaded content.
+
+## Document Object Model (DOM)
+The Document Object Model (DOM) connects web pages to scripts or programming languages by representing the structure of a document—such as the HTML representing a web page—in memory
+
+## Fetch API
+The Fetch API provides an interface for fetching resources (including across the network). It will seem familiar to anyone who has used XMLHttpRequest, but the new API provides a more powerful and flexible feature set.
+
+## Fullscreen API
+
+he Fullscreen API adds methods to present a specific Element (and its descendants) in full-screen mode. This makes it possible to present desired content—such as an online game—using the user's entire screen, removing all browser user interface elements and other applications from the screen until full-screen mode is shut off.
+
+## Geolocation API
+The Geolocation API allows the user to provide their location to web applications if they so desire. For privacy reasons, the user is asked for permission to report location information.
+
+Geolocation.getCurrentPosition(): Retrieves the device's current location.
+Geolocation.watchPosition(): Registers a handler function that will be called automatically each time the position of the device changes, returning the updated location.
+
+## HTML Drag and Drop
+
+HTML Drag and Drop interfaces enable applications to use drag-and-drop features in browsers. The user may select draggable elements with a mouse, drag those elements to a droppable element, and drop them by releasing the mouse button. A translucent representation of the draggable elements follows the pointer during the drag operation.
+
+## Performance API
+The High Resolution Time standard defines a Performance interface that supports client-side latency measurements within applications. The Performance interfaces are considered high resolution because they are accurate to a thousandth of a millisecond (subject to hardware or software constraints). The interfaces support a number of use cases including calculating frame-rates (potentially important in animations) and benchmarking (such as the time to load a resource).
+
+## History API
+The DOM Window object provides access to the browser's session history (not to be confused for WebExtensions history) through the history object. It exposes useful methods and properties that let you navigate back and forth through the user's history, and manipulate the contents of the history stack.Moving backward and forward through the user's history is done using the back(), forward(), and go() methods.
