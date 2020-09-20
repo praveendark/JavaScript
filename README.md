@@ -721,3 +721,18 @@ The Media Capabilities API allows developers to determine decoding and encoding 
 
 ## Media Capture and Streams API
 The Media Capture and Streams API, often called the Media Streams API or simply MediaStream API, is an API related to WebRTC which provides support for streaming audio and video data
+
+## Navigation Timing API
+The Navigation Timing API provides data that can be used to measure the performance of a web site.You can use the Navigation Timing API to gather performance data on the client side, which you can then transmit to a server using XMLHttpRequest or other techniques.
+
+This API lets you measure data that was previously difficult to obtain, such as the amount of time needed to unload the previous page, 
+
+## Network Information API
+The Network Information API provides information about the system's connection in terms of general connection type (e.g., 'wifi', 'cellular', etc.). This can be used to select high definition content or low definition content based on the user's connection. The entire API consists of the addition of the NetworkInformation interface and a single property to the Navigator interface: Navigator.connection.
+
+## Page Visibility API
+With tabbed browsing, there is a reasonable chance that any given webpage is in the background and thus not visible to the user. The Page Visibility API provides events you can watch for to know when a document becomes visible or hidden, as well as features to look at the current visibility state of the page.
+
+## Payment Request API
+
+The Payment Request API provides a consistent user experience for both merchants and users. It is not a new way for paying for things; rather, it's a way for users to select their preferred way of paying for things, and make that information available to a merchant.
