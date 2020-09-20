@@ -609,6 +609,7 @@ A promise is an object that may produce a single value some time in the future: 
 An async function is a function declared with the async keyword. Async functions are instances of the AsyncFunction constructor, and the await keyword is permitted within them. The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
 # Web API
 
+## Ambient Light Events
 The ambient light events are a handy way to make a web page or an application aware of any change in the light intensity. It allows them to react to such a change, for example by changing the color contrast of the User Interface (UI) or by changing the exposure necessary to take a picture.
 This event can be captured at the window object level by using the addEventListener method (using the devicelight event name) or by attaching an event handler to the window.ondevicelight property.
 
@@ -629,3 +630,48 @@ if ('ondevicelight' in window) {
   console.log('devicelight event not supported');
 }
 ```
+## Background Tasks API
+The Cooperative Scheduling of Background Tasks API (also referred to as the Background Tasks API or simply the requestIdleCallback() API) provides the ability to queue tasks to be executed automatically by the user agent when it determines that there is free time to do so.
+
+## Battery Status API
+The Battery Status API, more often referred to as the Battery API, provides information about the system's battery charge level and lets you be notified by events that are sent when the battery level or charging status change. This can be used to adjust your app's resource usage to reduce battery drain when the battery is low, or to save changes before the battery runs out in order to prevent data loss.
+## Bluetooth API
+
+## BroadcastChannel API
+By creating a BroadcastChannel object, you can receive any messages that are posted to it. You don't have to maintain a reference to the frames or workers you wish to communicate with: they can “subscribe” to a particular channel by constructing their own BroadcastChannel with the same name, and have bi-directional communication between all of them.
+The Web Bluetooth API provides the ability to connect and interact with Bluetooth Low Energy peripherals.
+
+###Creating or joining a channel
+A client joins a broadcast channel by creating a BroadcastChannel object. Its constructor takes one single parameter: the name of the channel. If it is the first to connect to that broadcast channel name, the underlying channel is created.
+
+// Connection to a broadcast channel
+const bc = new BroadcastChannel('test_channel');
+###Sending a message
+It is enough to call the postMessage() method on the created BroadcastChannel object, which takes any object as an argument. An example string message:
+
+// Example of sending of a very simple message
+bc.postMessage('This is a test message.');
+Any kind of object can be sent, not just a DOMString.
+
+The API doesn't associate any semantics to messages, so it is up to the code to know what kind of messages to expect and what to do with them.
+
+###Receiving a message
+When a message is posted, a message event is dispatched to each BroadcastChannel object connected to this channel. A function can be run for this event with the onmessage event handler:
+
+// A handler that only logs the event to the console:
+bc.onmessage = function (ev) { console.log(ev); }
+###Disconnecting a channel
+To leave a channel, call the close() method on the object. This disconnects the object from the underlying channel, allowing garbage collection.
+
+// Disconnect the channel
+bc.close();
+ 
+## CSS Counter Styles
+The CSS Counter Styles module allows to define custom counter styles
+
+## Channel Messaging API
+
+The Channel Messaging API allows two separate scripts running in different browsing contexts attached to the same document (e.g., two IFrames, or the main document and an IFrame, two documents via a SharedWorker, or two workers) to communicate directly, passing messages between one another through two-way channels (or pipes) with a port at each end.
+
+## Console API
+The Console API provides functionality to allow developers to perform debugging tasks, such as logging messages or the values of variables at set points in your code, or timing how long an operation takes to complete.
