@@ -706,3 +706,18 @@ The High Resolution Time standard defines a Performance interface that supports 
 
 ## History API
 The DOM Window object provides access to the browser's session history (not to be confused for WebExtensions history) through the history object. It exposes useful methods and properties that let you navigate back and forth through the user's history, and manipulate the contents of the history stack.Moving backward and forward through the user's history is done using the back(), forward(), and go() methods.
+
+## MediaStream Image Capture API
+The MediaStream Image Capture API is an API for capturing images or videos from a photographic device. In addition to capturing data, it also allows you to retrieve information about device capabilities such as image size, red-eye reduction and whether or not there is a flash and what they are currently set to. Conversely, the API allows the capabilities to be configured within the constraints what the device allows.
+
+## IndexedDB
+IndexedDB is a low-level API for client-side storage of significant amounts of structured data, including files/blobs. This API uses indexes to enable high-performance searches of this data. While Web Storage is useful for storing smaller amounts of data, it is less useful for storing larger amounts of structured data. IndexedDB provides a solution.
+
+## Long Tasks API
+The experimental Long Tasks API gives us visibility into tasks that take 50 milliseconds or more.
+
+## Media Capabilities API
+The Media Capabilities API allows developers to determine decoding and encoding abilities of the device, exposing information such as whether media is supported and whether playback should be smooth and power efficient, with real time feedback about playback to better enable adaptive streaming, and access to display property information.
+
+## Media Capture and Streams API
+The Media Capture and Streams API, often called the Media Streams API or simply MediaStream API, is an API related to WebRTC which provides support for streaming audio and video data
