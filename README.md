@@ -607,3 +607,25 @@ A promise is an object that may produce a single value some time in the future: 
 
 ## async/await
 An async function is a function declared with the async keyword. Async functions are instances of the AsyncFunction constructor, and the await keyword is permitted within them. The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
+# Web API
+
+The ambient light events are a handy way to make a web page or an application aware of any change in the light intensity. It allows them to react to such a change, for example by changing the color contrast of the User Interface (UI) or by changing the exposure necessary to take a picture.
+This event can be captured at the window object level by using the addEventListener method (using the devicelight event name) or by attaching an event handler to the window.ondevicelight property.
+
+Once captured, the event object gives access to the light intensity expressed in lux through the DeviceLightEvent.value property.
+```js
+if ('ondevicelight' in window) {
+  window.addEventListener('devicelight', function(event) {
+    var body = document.querySelector('body');
+    if (event.value < 50) {
+      body.classList.add('darklight');
+      body.classList.remove('brightlight');
+    } else {
+      body.classList.add('brightlight');
+      body.classList.remove('darklight');
+    }
+  });
+} else {
+  console.log('devicelight event not supported');
+}
+```
