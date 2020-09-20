@@ -736,3 +736,14 @@ With tabbed browsing, there is a reasonable chance that any given webpage is in 
 ## Payment Request API
 
 The Payment Request API provides a consistent user experience for both merchants and users. It is not a new way for paying for things; rather, it's a way for users to select their preferred way of paying for things, and make that information available to a merchant.
+
+## Touch events
+To provide quality support for touch-based user interfaces, touch events offer the ability to interpret finger (or stylus) activity on touch screens or trackpads.
+
+The touch events interfaces are relatively low-level APIs that can be used to support application-specific multi-touch interactions such as a two-finger gesture. A multi-touch interaction starts when a finger (or stylus) first touches the contact surface. Other fingers may subsequently touch the surface and optionally move across the touch surface. The interaction ends when the fingers are removed from the surface. During this interaction, an application receives touch events during the start, move, and end phases.
+
+## Web Animations API
+The Web Animations API allows for synchronizing and timing changes to the presentation of a Web page, i.e. animation of DOM elements. It does so by combining two models: the Timing Model and the Animation Model.
+
+## Notifications API
+The Notifications API allows web pages to control the display of system notifications to the end user. These are outside the top-level browsing context viewport, so therefore can be displayed even when the user has switched tabs or moved to a different app. The API is designed to be compatible with existing notification systems, across different platforms.
